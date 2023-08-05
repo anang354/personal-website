@@ -1,0 +1,95 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+html, body, html * {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+    background-color: #161616;
+    background-image: radial-gradient(#252525 0.8px, transparent 0.8px);
+    background-size: 40px 40px;
+}
+
+.container {
+    margin: 0 5%;
+}
+
+#jumbroton {
+    margin: 0;
+    padding: 20px 0px;
+}
+
+nav {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #353535;
+}
+nav > .brand {
+    display: flex;
+    align-items: center;
+}
+nav > .brand h2 {
+    padding: 0;
+    margin-left: 15px;
+    font-weight: 400;
+    color: #cecece;
+}
+nav > .navbar {
+    width: 80%;
+    display: flex;
+    justify-content: end;
+}
+
+nav > .navbar > ul {
+    display: flex;
+    margin-bottom: 20px;
+}
+nav > .navbar > ul > li {
+    margin: 10px;
+    list-style: none;
+}
+nav > .navbar > ul > li > a {
+    color: #777777;
+    padding: 10px 20px;
+    font-size: 11pt;
+    text-decoration: none;
+}
+nav > .navbar > ul > li > a:hover {
+    color: #cecece;
+}
+
+
+.header {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header > p {
+    color: #CFCFCF;
+}
+.header > .person {
+    width: 120px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 30px 0;
+}
+.header > h1 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 48pt;
+    margin-top: 20px;
+    background: #CFCFCF;
+    background: -webkit-linear-gradient(to top right, #CFCFCF 50%, #777777 100%);
+    background: -moz-linear-gradient(to top right, #CFCFCF 50%, #777777 100%);
+    background: linear-gradient(to top right, #CFCFCF 50%, #777777 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
