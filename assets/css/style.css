@@ -9,6 +9,23 @@ body {
     background-image: radial-gradient(#252525 0.8px, transparent 0.8px);
     background-size: 40px 40px;
 }
+@property --a
+{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+@keyframe animate
+{
+    0%
+    {
+        --a: 0deg;
+    }
+    100%
+    {
+        --a: 360deg;
+    }
+}
 
 .container {
     margin: 0 5%;
@@ -92,4 +109,14 @@ nav > .navbar > ul > li > a:hover {
     background: linear-gradient(to top right, #CFCFCF 50%, #777777 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+.btn-primary {
+    position: relative;
+    text-decoration: none;
+    padding: 15px 30px;
+    background: repeating-conic-gradient(from var(--a), var(--clr1) 0%, var(--clr1) 5%, transparent 5%, transparent 40%, var(--clr1) 100%);
+    animation: animate 2s linear infinite ;
+    -webkit-animation: animate 2s linear infinite ;
 }
