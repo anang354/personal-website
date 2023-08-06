@@ -125,6 +125,9 @@ nav > .navbar >ul >li > .active {
 .py-4 {
     padding: 80px 0;
 }
+.py-2 {
+    padding: 40px 0;
+}
 
 #skills {
     background-color: #1a1a1a;
@@ -151,8 +154,22 @@ nav > .navbar >ul >li > .active {
     background: linear-gradient(to top right, #CFCFCF 50%, #777777 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
 }
+.subtitle {
+    color: #9e9e9e;
+    width: 100%;
+    font-size: 13pt;
+    font-weight: 200;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+}
+.subtitle h4 {
+    text-align: center;
+    width: 650px;
+}
+
 
 
 
@@ -291,7 +308,7 @@ nav > .navbar >ul >li > .active {
 
 
 
- button {
+ .learn-more {
 	 position: relative;
 	 display: inline-block;
 	 cursor: pointer;
@@ -304,47 +321,47 @@ nav > .navbar >ul >li > .active {
 	 font-size: inherit;
 	 font-family: inherit;
 }
- button.learn-more {
+ a.learn-more {
 	 width: 12rem;
 	 height: auto;
 }
- button.learn-more .circle {
+ a.learn-more .circle {
 	 transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 	 position: relative;
 	 display: block;
 	 margin: 0;
 	 width: 3rem;
 	 height: 3rem;
-	 background: #282936;
+	 background: #5BE9B9;
 	 border-radius: 1.625rem;
 }
- button.learn-more .circle .icon {
+ a.learn-more .circle .icon {
 	 transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 	 position: absolute;
 	 top: 0;
 	 bottom: 0;
 	 margin: auto;
-	 background: #fff;
+	 background: #212121;
 }
- button.learn-more .circle .icon.arrow {
+ a.learn-more .circle .icon.arrow {
 	 transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 	 left: 0.625rem;
 	 width: 1.125rem;
 	 height: 0.125rem;
 	 background: none;
 }
- button.learn-more .circle .icon.arrow::before {
+ a.learn-more .circle .icon.arrow::before {
 	 position: absolute;
 	 content: '';
 	 top: -0.25rem;
 	 right: 0.0625rem;
 	 width: 0.625rem;
 	 height: 0.625rem;
-	 border-top: 0.125rem solid #fff;
-	 border-right: 0.125rem solid #fff;
+	 border-top: 0.125rem solid #212121;
+	 border-right: 0.125rem solid #212121;
 	 transform: rotate(45deg);
 }
- button.learn-more .button-text {
+ a.learn-more .button-text {
 	 transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 	 position: absolute;
 	 top: 0;
@@ -359,15 +376,15 @@ nav > .navbar >ul >li > .active {
 	 text-align: center;
 	 text-transform: uppercase;
 }
- button:hover .circle {
+ a.learn-more:hover .circle {
 	 width: 100%;
 }
- button:hover .circle .icon.arrow {
-	 background: #fff;
+a.learn-more:hover .circle .icon.arrow {
+	 background: #212121;
 	 transform: translate(1rem, 0);
 }
- button:hover .button-text {
-	 color: #fff;
+a.learn-more:hover .button-text {
+	 color: #212121;
 }
 
 .flexbox {
