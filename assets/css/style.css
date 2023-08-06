@@ -15,6 +15,7 @@ body {
     margin: 0 5%;
 }
 
+
 #jumbroton {
     margin: 0;
     padding: 20px 0px;
@@ -59,9 +60,11 @@ nav > .navbar > ul > li > a {
     transition: 0.3s ease-out;
 }
 nav > .navbar > ul > li > a:hover {
-    color: #cecece;
-    border-bottom: 1px solid #9e9e9e;
+    color: #5BE9B9;
     transition: 0.3 ease-in;
+}
+nav > .navbar >ul >li > .active {
+    color: #5BE9B9;
 }
 
 
@@ -100,7 +103,7 @@ nav > .navbar > ul > li > a:hover {
 
 
 .btn-primary {
-    --c: #9e9e9e;
+    --c: #5BE9B9;
     position: relative;
     text-decoration: none;
     padding: 15px 40px;
@@ -113,7 +116,8 @@ nav > .navbar > ul > li > a:hover {
 .btn-primary:hover {
     transition: 0.3s;
     letter-spacing: 0.2em;
-    font-size: 14pt;
+    background-color: #5BE9B9;
+    color: #1a1a1a;
 }
 
 
@@ -157,9 +161,9 @@ nav > .navbar > ul > li > a:hover {
 #portfolio {
     padding: 40px 0;
 }
-.container > .line {
+.container .line {
     width: 100%;
-    padding: 40px;
+    padding: 40px 0;
     border-bottom: 2px solid #212121;
 }
 .wrap {
@@ -279,8 +283,6 @@ nav > .navbar > ul > li > a:hover {
 
 #cta {
     padding: 40px 0;
-    display: flex;
-    justify-content: center;
 }
 .centered {
     width: 100%;
@@ -366,4 +368,65 @@ nav > .navbar > ul > li > a:hover {
 }
  button:hover .button-text {
 	 color: #fff;
+}
+
+.flexbox {
+    display: flex;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-center {
+    justify-content: center;
+}
+
+
+.card-article {
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #212121;
+    margin: 0 10px;
+}
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .25s ease-in-out;
+    border-radius: 15px;
+}
+.card-article .card-body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: #212121;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .45s ease-in-out;
+}
+.card-body p {
+    text-align: center;
+    font-size: 14pt;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.card-article:hover .card-body {
+    opacity: 100;
+    transition: .45 ease-in-out;
+}
+.card-article:hover .card-image {
+    transition: .25 ease-in-out;
+    transform: scale(1.3);
 }
