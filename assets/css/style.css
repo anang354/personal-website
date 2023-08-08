@@ -3,6 +3,7 @@ html, body, html * {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 body {
     background-color: #161616;
@@ -438,7 +439,23 @@ a.learn-more:hover .button-text {
     font-size: 14pt;
     font-weight: 400;
     line-height: 1.5;
-    margin-bottom: 30px;
+}
+.card-body > .categories {
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+.badge {
+    border: 1px solid #1a1a1a;
+    color: #5BE9B9;
+    text-transform: uppercase;
+    font-size: 8pt;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .card-article:hover .card-body {
@@ -471,4 +488,13 @@ a.learn-more:hover .button-text {
     100% { transform: rotate( 0.0deg) }
   }
   
-  
+  #blog {
+    background-color: #1a1a1a;
+    border-top: #212121;
+    border-bottom: #212121;
+    padding: 45px 0;
+    margin: 0;
+}
+.d-flex {
+    display: flex;
+}
