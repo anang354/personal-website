@@ -9,22 +9,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
+    <nav>
+        <div class="brand">
+            <h2>ae</h2>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#jumbroton" class="active">Home</a></li>
+                <li><a href="#portfolio">Skills</a></li>
+                <li><a href="#contact-page">Portfolio</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
         <div id="jumbroton">
-            <nav>
-                <div class="brand">
-                    <h2>Anang Egga</h2>
-                </div>
-                <div class="navbar">
-                    <ul>
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#portfolio">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Project</a></li>
-                    </ul>
-                </div>
-            </nav>
+            
             <div class="header">
                 <img src="assets/img/anangegga.jpg" class="person" alt="Anang Egga">
                 <p>Hi, I'm <span style="color: #5BE9B9;">Anang Egga</span> <span class="wave">👋</span></p>
@@ -57,7 +57,7 @@
             <h2 class="title-text">Hi, Nice to meet you <br/> here is my skills may can help you</h2>
             <div class="subtitle">
                 <h4>
-                    Since beginning my journey as a freelance designer over 11 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
+                    Since beginning my journey as a freelance designer over 11 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. 
                 </h4>
             </div>
             <div class="py-2"></div>
@@ -154,7 +154,7 @@
                 <a href="#" class="btn-primary">Get in Touch <i class="fa-regular fa-paper-plane"></i></a>
                 
             </div>
-            <div class="line"></div>
+            <div id="contact-page" class="line"></div>
         </div>
     </div>
 
@@ -269,15 +269,18 @@
             </div>
             <div class="py-2"></div>
             <div class="py-4">
+                <div class="brand">
+                    <h2 style="text-align: center;">ae</h2>
+                </div>
                 <div class="subtitle">
                     <h3>Living, learning, & leveling up <br/> one day at a time.</h3>
                 </div>
-                <div class="account">
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                <div class="account"> 
+                    <a href="https://twitter.com/anangega" target="_blank" title="twitter x"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/anang-egga-ursula-huda-23b640274/" target="_blank" title="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/anang.djokamers/" target="_blank" title="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/anangegga/" target="_blank" title="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="mailto:anangegga@gmail.com" title="email"><i class="fa-regular fa-envelope"></i></a>
                 </div>
                 <footer>
                     <small>Crafted with <i class="fa-regular fa-heart text-red"></i> and a cup of coffee <i class="fa-solid fa-mug-hot"></i> by me</small>
@@ -287,4 +290,15 @@
         </div>
     </div>
 </body>
+<script>
+const navbar = document.querySelector('nav');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) { // Ganti dengan nilai scroll yang sesuai
+    navbar.classList.add('fixed');
+  } else {
+    navbar.classList.remove('fixed');
+  }
+});
+</script>
 </html>
