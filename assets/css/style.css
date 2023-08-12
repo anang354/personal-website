@@ -681,6 +681,11 @@ div.column-3 {
     -o-transition: 0.3s;
 }
 
+.account > a:hover > i {
+    transition: transform 0.4s ease-out;
+    transform: rotateZ(360deg);
+}
+
 footer {
     width: 100%;
     margin-top: 40px;
