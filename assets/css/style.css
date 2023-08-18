@@ -3,6 +3,13 @@
     font-family: "Manteman";
     src: url("/assets/fonts/Manteman.ttf")
 }
+:root {
+    --font-size-base: 16px; 
+    --font-size-superheading: 36pt;
+    --font-size-heading: 32pt;
+    --font-size-subheading: 24pt;
+    --font-size-paragraph: 12pt; 
+  }
 
 html, body, html * {
   font-family: 'Roboto', sans-serif;
@@ -59,7 +66,7 @@ nav > .brand {
     margin-left: 15px;
     font-weight: 400;
     color: #5BE9B9;
-    font-size: 36pt;
+    font-size: var(--font-size-superheading);
 }
 nav > .navbar {
     width: 80%;
@@ -79,7 +86,7 @@ nav > .navbar > ul > li {
 nav > .navbar > ul > li > a {
     color: #777777;
     padding: 10px 20px;
-    font-size: 12pt;
+    font-size: var(--font-size-paragraph);
     text-decoration: none;
     transition: 0.3s ease-out;
 }
@@ -102,7 +109,7 @@ nav > .navbar >ul >li > .active {
 
 .header > p {
     color: #CFCFCF;
-    font-size: 11pt;
+    font-size: var(--font-size-paragraph);
 }
 .header > .person {
     width: 120px;
@@ -198,7 +205,7 @@ svg.svg-inline {
 .title-text {
     font-weight: 400;
     text-align: center;
-    font-size: 32pt;
+    font-size: var(--font-size-heading);
     margin-top: 20px;
     background: #CFCFCF;
     background: -webkit-linear-gradient(to top right, #CFCFCF 50%, #777777 100%);
@@ -525,7 +532,7 @@ a.learn-more:hover .button-text {
     animation-iteration-count: infinite;  /* Never stop waving :) */
     transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
     display: inline-block;
-    font-size: 24pt;
+    font-size: var(--font-size-subheading);
   }
   
   @keyframes wave-animation {
@@ -702,4 +709,25 @@ footer small {
 }
 .text-browm {
     color: ;
+}
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE CSS MEDIA SCREEN */
+
+@media screen and (max-width: 1045px) {
+    #portfolio > .wrap {
+        flex-wrap: wrap;
+    }
+    #portfolio > .wrap > .card {
+        width: calc(35% - 10px);
+        margin: 15px 20px;
+    }
 }
